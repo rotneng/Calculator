@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+}
+
+.container {
+    min-height: 100vh;
+    background-image: url(../images/Wood3.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.instructions {
+    background-color: gray;
+    min-height: 100px;
+    width: 100vw;
+}
+
+.calculator {
+    width: auto;
+    display: grid;
+    grid-template-columns: 50px 50px 50px 50px;
+    grid-template-rows: 50px 50px 50px 50px 50px 50px 50px 50px;
+    gap: 8px;
+    background-image: linear-gradient(45deg, rgb(85, 71, 71), black);
+    padding: 15px;
+    border-radius: 12px;
+}
+
+.calc-title {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    text-align: center;
+    color: white;
+}
+
+.screen {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    /* border: 5px solid green; */
+}
+
+.screen input {
+    width: 99%;
+    height: 40px;
+    background-color: aqua;
+    border-radius: 12px;
+    text-align: right;
+    font-size: 20px;
+    border: 2px solid silver;
+}
+
+.divider {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+hr {
+    margin: 5px;
+}
+
+.btn {
+    width: 50px;
+    height: 50px;
+}
+#equalBtn {
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+#powerBtn {
+    background-color: red;
+    color: white;
+}
